@@ -159,9 +159,6 @@ body {
 
 /* <!-- Hero Section --> */
 
-
-
-
 /* Hero Slider */
 .hero-slider {
   position: relative;
@@ -169,7 +166,6 @@ body {
   overflow: hidden;
   color: #fff;
 }
-
 
 /* Center the text inside overlay */
 .hero-overlay {
@@ -186,9 +182,6 @@ body {
   z-index: 5;
   padding: 20px;
 }
-
-
-
 
 /* Ensure slides are under text, links, and dots */
 .slide {
@@ -216,15 +209,15 @@ body {
   z-index: 5;
 }
 
-/* Links above everything */
+/* Links */
 .hero-links {
   position: absolute;
   bottom: 60px;
   width: 100%;
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
   z-index: 10; /* stay visible */
 }
 
@@ -244,7 +237,7 @@ body {
   color: #f1f1f1;
 }
 
-/* Dots above everything */
+/* Dots */
 .hero-dots {
   position: absolute;
   bottom: 20px;
@@ -277,6 +270,11 @@ body {
   .hero-text p {
     font-size: 1.4rem;
   }
+
+  .hero-links {
+    gap: 12px;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -286,12 +284,24 @@ body {
   .hero-text p {
     font-size: 1rem;
   }
+
   .hero-links {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr; /* stack links */
     gap: 10px;
     bottom: 80px;
+    text-align: center;
+  }
+
+  .hero-links a {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 10px 15px;
   }
 }
+
 
 
 
