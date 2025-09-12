@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <button id="menu-toggle" class="menu-btn">
+        <i class="fas fa-bars"></i> MENU
+      </button>
+    </div>
+
+    <div class="nav-center">
+      <h1 class="logo">
+  <img src="backlogo7665.png" alt="Logo">
+  Oxbridge SCHOOL
+</h1>
+    </div>
+
+    <div class="nav-right">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+      <a href="#" class="desktop-only">SUMMER</a>
+      <a href="#" class="desktop-only">ADMISSION</a>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu -->
+  <nav id="sidebar" class="sidebar">
+    <button id="close-btn" class="close-btn"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="mobile-only"><a href="#">Summer</a></li>
+      <li class="mobile-only"><a href="#">Admission</a></li>
+    </ul>
+  </nav>
+
+
+<!-- section 2 -->
+
+
+
+<!-- Hero Section (Slider) -->
+
+
+
+
+<section class="hero-slider">
+  <div class="slide active" style="background-image: url('https://picsum.photos/1920/1080?random=1');">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1>The world ahead needs <br> people who</h1>
+        <p><em>celebrate the power of <br> difference</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('https://picsum.photos/1920/1080?random=2');">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1>Inspiring minds <br> for the future</h1>
+        <p><em>through creativity and <br> knowledge</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('https://picsum.photos/1920/1080?random=3');">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1>Education that <br> transforms lives</h1>
+        <p><em>with passion and <br> purpose</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="hero-links">
+    <a href="#">GIVE TO GREENHILL</a>
+    <a href="#">75TH ANNIVERSARY</a>
+    <a href="#">CALENDAR</a>
+    <a href="#">PARENTS</a>
+    <a href="#">ALUMNI</a>
+    <a href="#">MYGREENHILL <i class="fas fa-lock"></i></a>
+  </div>
+
+  <!-- Dots -->
+  <div class="hero-dots">
+    <span class="active" data-slide="0"></span>
+    <span data-slide="1"></span>
+    <span data-slide="2"></span>
+  </div>
+</section>
+
+
+
+<!-- section 3 -->
+
+
+
+
+
+
+<section class="mission-section">
+  <!-- Top Row -->
+  <div class="mission-top">
+    <div class="mission-text">
+      <h2>
+        We bring together exceptional resources, incomparable people, and enduring values – 
+        and we challenge ourselves to be ambitious, to surpass expectations.
+      </h2>
+      <p class="small-text">HOW WE WORK</p>
+      <p class="small-text">OUR MISSION</p>
+    </div>
+    <div class="mission-image">
+      <img src="https://picsum.photos/500/400?random=1" alt="Students working">
+    </div>
+  </div>
+
+  <!-- Bottom Row -->
+  <div class="mission-bottom">
+    <div class="mission-left">
+      <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Circular Logo">
+      <h3><em>We Excel</em> in <br> New Ways</h3>
+    </div>
+    <div class="mission-right">
+      <p>
+        We embrace complexity. We think in layers. <br>
+        We push ourselves to discover the unexpected. <br>
+        We make space for new voices, seek out new perspectives. <br>
+        We cultivate a strong sense of purpose.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- section 4-->
+
+
+
+
+
+<section class="program-section">
+  <!-- Progress Line with Circles -->
+  <div class="program-tabs">
+    <div class="tab" data-tab="0">
+      <span class="circle active"></span>
+      <p>Overview</p>
+    </div>
+    <div class="tab" data-tab="1">
+      <span class="circle"></span>
+      <p>Preschool & Lower School</p>
+    </div>
+    <div class="tab" data-tab="2">
+      <span class="circle"></span>
+      <p>Middle School</p>
+    </div>
+    <div class="tab" data-tab="3">
+      <span class="circle"></span>
+      <p>Upper School</p>
+    </div>
+  </div>
+
+  <!-- Content Boxes -->
+  <div class="program-content">
+    <!-- Tab 1 - Overview -->
+    <div class="content-box active">
+      <div class="card">
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Academics">
+        <div class="card-text">
+          <h3>Academics</h3>
+          <p>Our academic program instills skills and values for success.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Athletics</h3>
+          <p>Physical education builds grit, teamwork, and commitment.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Athletics">
+      </div>
+      <div class="card">
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Arts">
+        <div class="card-text">
+          <h3>Arts</h3>
+          <p>Our arts program inspires creativity and self-expression.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Design & Innovation</h3>
+          <p>Students solve real-world problems through innovation.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Innovation">
+      </div>
+    </div>
+
+    <!-- Tab 2 - Preschool & Lower School -->
+    <div class="content-box">
+      <div class="card">
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Academics">
+        <div class="card-text">
+          <h3>Academics</h3>
+          <p>Our program fosters creativity and independence.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Athletics</h3>
+          <p>Daily PE builds confidence, teamwork, and joy.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Athletics">
+      </div>
+      <div class="card">
+        <img src="img7.jpg" alt="Arts">
+        <div class="card-text">
+          <h3>Arts</h3>
+          <p>Students explore diverse art forms with passion.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Design & Innovation</h3>
+          <p>Creative projects build entrepreneurship skills.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="img8.jpg" alt="Innovation">
+      </div>
+    </div>
+
+    <!-- Tab 3 - Middle School -->
+    <div class="content-box">
+      <div class="card">
+        <img src="img9.jpg" alt="Academics">
+        <div class="card-text">
+          <h3>Academics</h3>
+          <p>Middle School curriculum encourages risk-taking and discovery.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Athletics</h3>
+          <p>Sports teach discipline, sportsmanship, and perseverance.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="img10.jpg" alt="Athletics">
+      </div>
+      <div class="card">
+        <img src="img11.jpg" alt="Arts">
+        <div class="card-text">
+          <h3>Arts</h3>
+          <p>Students explore over 30 courses in arts and music.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Design & Innovation</h3>
+          <p>Hands-on experience with 3D printing and coding.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="img12.jpg" alt="Innovation">
+      </div>
+    </div>
+
+    <!-- Tab 4 - Upper School -->
+    <div class="content-box">
+      <div class="card">
+        <img src="img13.jpg" alt="Academics">
+        <div class="card-text">
+          <h3>Academics</h3>
+          <p>Upper School provides advanced studies and leadership opportunities.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Athletics</h3>
+          <p>Competitive sports prepare students for challenges beyond school.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="img14.jpg" alt="Athletics">
+      </div>
+      <div class="card">
+        <img src="img15.jpg" alt="Arts">
+        <div class="card-text">
+          <h3>Arts</h3>
+          <p>High-level courses in theater, visual arts, and performance.</p>
+          <a href="#">Find Out More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h3>Design & Innovation</h3>
+          <p>Capstone projects drive entrepreneurship and innovation.</p>
+          <a href="#">Find Out More</a>
+        </div>
+        <img src="img16.jpg" alt="Innovation">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- section 5-->
+
+
+
+
+
+<section class="testimonial-section">
+  <div class="testimonial-container">
+    <!-- Left side text -->
+    <div class="testimonial-left">
+      <h2>
+        Our community welcomes people who can work across cultures and disciplines, 
+        who make space for new voices, and who seek out new perspectives.
+      </h2>
+      <p>
+        Parents and guardians are an integral part of the Greenhill community. 
+        Hear their thoughts on what attending Greenhill has meant for their children.
+      </p>
+    </div>
+
+    <!-- Right side slider -->
+    <div class="testimonial-right">
+      <div class="testimonial-slider">
+        <!-- Slide 1 -->
+        <div class="t-slide active">
+          <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Greenhill Logo" class="logo">
+          <h4><span>Salim and Safina,</span> Parents ’32, ’34</h4>
+          <p>
+            "Greenhill provides our daughters a nurturing and inclusive environment 
+            that allows them to thrive while pursuing their goals..."
+          </p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="t-slide">
+          <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Greenhill Logo" class="logo">
+          <h4><span>Michael and Ayesha,</span> Parents ’30</h4>
+          <p>
+            "Greenhill has been transformative for our son, giving him the confidence 
+            to explore his passions and develop lifelong friendships."
+          </p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="t-slide">
+          <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Greenhill Logo" class="logo">
+          <h4><span>Daniel and Sara,</span> Parents ’28</h4>
+          <p>
+            "We value the diversity and inclusivity of Greenhill, where every child 
+            feels seen, respected, and inspired to grow."
+          </p>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="testimonial-dots">
+        <span class="t-dot active" data-slide="0"></span>
+        <span class="t-dot" data-slide="1"></span>
+        <span class="t-dot" data-slide="2"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- section 6-->
+
+
+
+
+<section class="news-section">
+  <h2 class="news-title">What’s happening at Greenhill?</h2>
+
+  <div class="news-container">
+    <!-- Left: Main news -->
+    <div class="main-news">
+      <h3>Greenhill School Receives Grant for Environmental Education Program</h3>
+      <p>
+        Greenhill School was recently awarded a matching grant from the Edward E. Ford Foundation
+        to establish a comprehensive environmental science education program for all students.
+      </p>
+    </div>
+
+    <!-- Center: Main Image -->
+    <div class="main-news-img">
+      <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="Greenhill News">
+    </div>
+
+    <!-- Right: More news -->
+    <div class="more-news">
+      <h4>More News</h4>
+      <div class="more-news-item">
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="News 1">
+        <p>Staff Member Recognized by CASE</p>
+      </div>
+      <div class="more-news-item">
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="News 2">
+        <p>Debate Students Garner National Success</p>
+      </div>
+      <div class="more-news-item">
+        <img src="WhatsApp Image 2025-08-15 at 15.13.25_7848f245.jpg" alt="News 3">
+        <p>Faculty Member Honored with JCL Silver Bowl</p>
+      </div>
+      <a href="#" class="btn-view-more">View More</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- section 7 -->
+
+
+
+
+
+
+
+<section class="talking-section">
+  <div class="talking-container">
+    <!-- Left Content -->
+    <div class="talking-text">
+      <h2>What we're <em>talking about</em></h2>
+      <p>
+        We challenge our students to think, speak, and listen with their whole authentic selves. 
+        Hear what they have to say about Greenhill – in their own words.
+      </p>
+      <a href="#" class="btn-talking">Get to Know Us</a>
+    </div>
+
+    <!-- Right Videos -->
+    <div class="talking-videos">
+      <div class="video-card">
+        <div class="video-thumb">
+          <img src="student1.jpg" alt="Aditya '24">
+          <span class="play-btn">▶</span>
+        </div>
+        <p>Aditya ’24</p>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb">
+          <img src="student2.jpg" alt="Andrew '29">
+          <span class="play-btn">▶</span>
+        </div>
+        <p>Andrew ’29</p>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb">
+          <img src="student3.jpg" alt="Elsa '32">
+          <span class="play-btn">▶</span>
+        </div>
+        <p>Elsa ’32</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- section 8 -->
+
+
+
+<section class="admissions-section">
+  <div class="admissions-container">
+    <!-- Left Side Image -->
+    <div class="admissions-image">
+      <img src="backlogo7665.png" alt="Student working">
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="admissions-content">
+      <p class="sub-heading">READY TO LEARN MORE?</p>
+      <h2>We'll let you know about upcoming admissions events.</h2>
+      <a href="#" class="btn-admissions">CONNECT WITH GREENHILL</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- section 9 -->
+
+
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <!-- Left Column -->
+    <div class="footer-about">
+      <h2 class="footer-logo">OXBRIDGE <span>SCHOOL</span></h2>
+      <p> independent day school for Pre-K to Grade 12</p>
+      <p>canal avenew ryk</p>
+      <p><a href="tel:+923336614378">03336614378</a></p>
+    </div>
+
+    <!-- Link Columns -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3>Academics</h3>
+        <ul>
+          <li><a href="#">Preschool & Lower School</a></li>
+          <li><a href="#">Middle School</a></li>
+          <li><a href="#">Upper School</a></li>
+          <li><a href="#">College Counseling</a></li>
+          <li><a href="#">Montgomery Library</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Athletics</h3>
+        <ul>
+          <li><a href="#">Meet Our Coaches</a></li>
+          <li><a href="#">Athletics Schedules</a></li>
+          <li><a href="#">Sports Performance & Wellness</a></li>
+          <li><a href="#">Conference Honors</a></li>
+          <li><a href="#">Athletes Beyond Greenhill</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Arts</h3>
+        <ul>
+          <li><a href="#">Performing Arts</a></li>
+          <li><a href="#">Visual Arts</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Video Production</a></li>
+          <li><a href="#">Debate</a></li>
+          <li><a href="#">Publications</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Design & Innovation</h3>
+        <ul>
+          <li><a href="#">Rosa O. Valdes STEM • Innovation Center</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright © 2025 Oxbridge School. All Rights Reserved.</p>
+    <p>Design by ZARYAB EHSAN. <a href="#">Privacy/Cookie Policy</a>.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
