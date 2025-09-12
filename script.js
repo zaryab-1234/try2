@@ -106,3 +106,31 @@ setInterval(() => {
   let next = (tCurrent + 1) % tSlides.length;
   showTSlide(next);
 }, 5000);
+
+
+// section  7
+
+
+  document.querySelectorAll('.video-card').forEach(card => {
+    const video = card.querySelector('video');
+    const btn = card.querySelector('.play-btn');
+
+    btn.addEventListener('click', () => {
+      video.play();
+      btn.style.display = 'none'; // hide play button
+
+      // Pause other videos when one plays
+      document.querySelectorAll('.video-card video').forEach(other => {
+        if (other !== video) {
+          other.pause();
+          other.parentElement.querySelector('.play-btn').style.display = 'block';
+        }
+      });
+    });
+
+    // Show button again when video ends
+    video.addEventListener('ended', () => {
+      btn.style.display = 'block';
+    });
+  });
+
