@@ -2,60 +2,272 @@
 <html>
 <head>
   <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css' rel='stylesheet' />
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-    #calendar {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-  </style>
+<link rel="stylesheet" href="program.css">
 </head>
 <body>
+  
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <button id="menu-toggle" class="menu-btn">
+        <i class="fas fa-bars"></i> MENU
+      </button>
+    </div>
 
-  <h2>School Events Agenda</h2>
-  <div id='calendar'></div>
+    <div class="nav-center">
+      <h1 class="logo">
+  <img  src="backlogo7665.png" alt="Logo">
+  <a href="index.html">Oxbridge SCHOOL</a>
+</h1>
+    </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'listWeek', // Agenda-style list view
-        headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,listWeek'
-        },
-        events: [
-          {
-            title: 'Greenhill Birthday Celebration at Wildlike',
-            start: '2025-09-14T15:00:00',
-            end: '2025-09-14T17:00:00'
-          },
-          {
-            title: 'MS Mini School',
-            start: '2025-09-18',
-            allDay: true
-          },
-          {
-            title: 'Community Parent Meeting Hosted by the PA',
-            start: '2025-09-18T08:15:00',
-            end: '2025-09-18T09:15:00'
-          },
-          {
-            title: 'General Campus Tour',
-            start: '2025-09-18T13:30:00',
-            end: '2025-09-18T14:15:00'
-          }
-        ]
-      });
-      calendar.render();
-    });
-  </script>
+    <div class="nav-right">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+      <a href="#" class="desktop-only">SUMMER</a>
+      <a href="#" class="desktop-only">ADMISSION</a>
+    </div>
+  </header>
 
+  <!-- Sidebar Menu -->
+  <nav id="sidebar" class="sidebar">
+    <button id="close-btn" class="close-btn"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="program.html">Programs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="mobile-only"><a href="#">Summer</a></li>
+      <li class="mobile-only"><a href="#">Admission</a></li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- section 2 -->
+
+
+<section class="academics">
+  <div class="academics-left">
+    <div class="left-img-wrapper">
+      <img src="people-office-work-day_23-2150690162.jpg" alt="Notes and Laptop">
+    </div>
+    <p class="side-text">READY FOR THE WORLD AHEAD</p>
+  </div>
+
+  <div class="academics-right">
+    <img src="people-office-work-day_23-2150690162.jpg" alt="Students collaborating">
+    <div class="academics-text">
+      <h2>Academics</h2>
+      <p><em>We excel in new ways</em></p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- section3  -->
+
+
+<section class="school-section">
+  <div class="school-card">
+    <img src="preschool.jpg" alt="Preschool">
+    <h3>Preschool</h3>
+    <p>Our youngest students learn in big ways.</p>
+    <a href="#">FIND OUT MORE</a>
+  </div>
+
+  <div class="school-card">
+    <img src="lower-school.jpg" alt="Lower School">
+    <h3>Lower School</h3>
+    <p>We foster creativity, cultivate independence, and nurture a lifelong love of learning.</p>
+    <a href="#">FIND OUT MORE</a>
+  </div>
+
+  <div class="school-card">
+    <img src="middle-school.jpg" alt="Middle School">
+    <h3>Middle School</h3>
+    <p>An energizing, supportive experience for students who love to learn together.</p>
+    <a href="#">FIND OUT MORE</a>
+  </div>
+
+  <div class="school-card">
+    <img src="upper-school.jpg" alt="Upper School">
+    <h3>Upper School</h3>
+    <p>A wide-ranging, flexible curriculum challenges students to expand their horizons and develop their character.</p>
+    <a href="#">FIND OUT MORE</a>
+  </div>
+</section>
+
+
+
+
+
+<!-- section 4 -->
+
+
+
+
+
+<!-- Section: Science Lab Image and Students -->
+  <section class="lab-section">
+    <div class="image-container">
+      <img src="people-office-work-day_23-2150690162.jpg" alt="Students in Science Lab">
+    </div>
+    <div class="quote-box">
+      <div class="quote-content">
+        <div class="quote-logo">G</div>
+        <p class="quote-text">
+          "At Greenhill, it is impossible to avoid moments of daily inspiration. Walking around the Greenhill campus, opportunities arise to see enthralled faces, enthusiastic smiles, furrows of concentration, and energetic involvement on the part of the teachers and students alike."
+        </p>
+        <p class="quote-author">JASON YAFFE, DIRECTOR OF ACADEMICS</p>
+        <a href="#" class="cta-link">GREENHILL’S PILLARS OF TEACHING AND LEARNING</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- section 5  -->
+
+
+
+
+
+
+  <section class="talking-section">
+  <div class="talking-text">
+    <h2>What we’re <em>talking about</em></h2>
+    <p class="bold-text">
+      Students and teachers build meaningful relationships – relationships that inspire students<br>
+      to push themselves to discover the unexpected.
+    </p>
+    <p>
+      Hear more about what our students and teachers have to say about the academic experience at Greenhill.
+    </p>
+  </div>
+
+  <div class="video-grid">
+    <!-- Video Card 1 -->
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video src="ellie-video.mp4" poster="ellie-thumb.jpg" controls muted></video>
+      </div>
+      <p>Ellie ’36</p>
+    </div>
+
+    <!-- Video Card 2 -->
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video src="nora-video.mp4" poster="nora-thumb.jpg" controls muted></video>
+      </div>
+      <p>Nora ’30</p>
+    </div>
+
+    <!-- Video Card 3 -->
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video src="scott-video.mp4" poster="scott-thumb.jpg" controls muted></video>
+      </div>
+      <p><strong>Scott Cotton</strong>, Upper School<br>History Teacher</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- section 6  -->
+
+
+<section class="connect-section">
+  <div class="connect-image">
+    <img src="students-outside.jpg" alt="Students smiling with laptop">
+  </div>
+  <div class="connect-content">
+    <small class="mini-heading">READY TO LEARN MORE?</small>
+    <h2>We'll let you know about upcoming admissions events.</h2>
+    <a href="#" class="connect-btn">Connect with Greenhill</a>
+  </div>
+</section>
+
+
+
+<!-- section 7 -->
+
+
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        <h2 class="logo">Greenhill <span>SCHOOL</span></h2>
+        <p class="description">
+          A coed, nonsectarian, independent day school for Pre-K to Grade 12
+        </p>
+        <address>
+          4141 Spring Valley Road, Addison, TX 75001
+        </address>
+        <a href="tel:+19726285400" class="phone">(972) 628-5400</a>
+      </div>
+      <div class="footer-section">
+        <h3>Academics</h3>
+        <ul>
+          <li><a href="#">Preschool & Lower School</a></li>
+          <li><a href="#">Middle School</a></li>
+          <li><a href="#">Upper School</a></li>
+          <li><a href="#">College Counseling</a></li>
+          <li><a href="#">Montgomery Library</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Athletics</h3>
+        <ul>
+          <li><a href="#">Meet Our Coaches</a></li>
+          <li><a href="#">Athletics Schedules</a></li>
+          <li><a href="#">Sports Performance & Wellness</a></li>
+          <li><a href="#">Conference Honors</a></li>
+          <li><a href="#">Athletes Beyond Greenhill</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Arts</h3>
+        <ul>
+          <li><a href="#">Performing Arts</a></li>
+          <li><a href="#">Visual Arts</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Video Production</a></li>
+          <li><a href="#">Debate</a></li>
+          <li><a href="#">Publications</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Design & Innovation</h3>
+        <ul>
+          <li><a href="#">Rosa O. Valdes STEM + Innovation Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Greenhill School. All Rights Reserved.</p>
+      <p>Design by UBIQ, powered by AMAIS. <a href="#">Privacy/Cookie Policy.</a></p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+ <script src="program.js"></script>
 </body>
 </html>
