@@ -454,32 +454,22 @@ body {
 
 
 
-
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+.lab-section {
+  position: relative;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f1e9;
   color: #333;
 }
 
-.lab-section {
-  position: relative;
-  text-align: center;
-}
-
-.image-container img {
+.lab-section .image-container img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 0; /* optional */
 }
 
-.quote-box {
+.lab-section .quote-box {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -489,22 +479,27 @@ body {
   max-width: 700px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  text-align: left;
+  z-index: 10;
+  width: 90%;
 }
 
-.quote-content .quote-logo {
+.lab-section .quote-content .quote-logo {
   font-size: 28px;
   font-weight: bold;
   color: #004d25;
   margin-bottom: 10px;
 }
 
-.quote-text {
+.lab-section .quote-text {
   font-style: italic;
   margin-bottom: 15px;
   font-size: 16px;
+  line-height: 1.5;
 }
 
-.quote-author {
+.lab-section .quote-author {
   font-weight: bold;
   color: #006747;
   margin-bottom: 10px;
@@ -512,7 +507,7 @@ body {
   text-transform: uppercase;
 }
 
-.cta-link {
+.lab-section .cta-link {
   display: inline-block;
   text-decoration: none;
   color: #006747;
@@ -521,7 +516,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.cta-link:hover {
+.lab-section .cta-link:hover {
   color: #004d25;
   border-color: #004d25;
 }
@@ -530,44 +525,60 @@ body {
          Responsive Styles
       ------------------------------ */
 
-      @media (max-width: 768px) {
-        .quote-box {
-          padding: 20px;
-          font-size: 14px;
-        }
+/* Tablet */
+@media (max-width: 1024px) {
+  .lab-section .quote-box {
+    max-width: 600px;
+    padding: 20px 25px;
+  }
 
-        .quote-text {
-          font-size: 14px;
-        }
+  .lab-section .quote-content .quote-logo {
+    font-size: 24px;
+  }
 
-        .quote-author {
-          font-size: 13px;
-        }
+  .lab-section .quote-text {
+    font-size: 15px;
+  }
 
-        .quote-content .quote-logo {
-          font-size: 24px;
-        }
-      }
+  .lab-section .quote-author {
+    font-size: 13px;
+  }
 
-      @media (max-width: 480px) {
-        .quote-box {
-          bottom: 10px;
-          padding: 18px;
-          font-size: 13px;
-        }
+  .lab-section .cta-link {
+    font-size: 14px;
+  }
+}
 
-        .quote-text {
-          font-size: 13px;
-        }
+/* Mobile */
+@media (max-width: 600px) {
+  .lab-section .quote-box {
+    position: static;
+    transform: none;
+    margin: 20px auto 40px auto;
+    max-width: 90%;
+    padding: 18px 20px;
+    text-align: center;
+  }
 
-        .quote-author {
-          font-size: 12px;
-        }
+  .lab-section .quote-content .quote-logo {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
 
-        .cta-link {
-          font-size: 13px;
-        }
-      }
+  .lab-section .quote-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .lab-section .quote-author {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .lab-section .cta-link {
+    font-size: 13px;
+  }
+}
 
 
 
