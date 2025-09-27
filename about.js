@@ -44,42 +44,31 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".facts-section .tab");
   const contents = document.querySelectorAll(".facts-section .tab-content");
-  const wrapper = document.querySelector(".facts-section .tabs-wrapper");
-  const leftArrow = document.querySelector(".facts-section .arrow.left");
-  const rightArrow = document.querySelector(".facts-section .arrow.right");
+  const select = document.getElementById("facts-select");
 
-  // Tab switching
+  // Desktop tabs
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
       tabs.forEach(t => t.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
-
       tab.classList.add("active");
       document.getElementById(tab.dataset.target).classList.add("active");
+
+      // Sync dropdown with active tab
+      select.value = tab.dataset.target;
     });
   });
 
-  // Scroll tabs with arrows
-  leftArrow.addEventListener("click", () => {
-    wrapper.scrollBy({ left: -250, behavior: "smooth" });
+  // Mobile dropdown
+  select.addEventListener("change", () => {
+    const value = select.value;
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+    document.getElementById(value).classList.add("active");
+
+    // Sync tabs with dropdown
+    document.querySelector(`.tab[data-target="${value}"]`).classList.add("active");
   });
-
-  rightArrow.addEventListener("click", () => {
-    wrapper.scrollBy({ left: 250, behavior: "smooth" });
-  });
-
-  // Auto-hide arrows if not scrollable
-  function toggleArrows() {
-    leftArrow.style.visibility = wrapper.scrollLeft <= 0 ? "hidden" : "visible";
-    rightArrow.style.visibility =
-      wrapper.scrollLeft + wrapper.clientWidth >= wrapper.scrollWidth
-        ? "hidden"
-        : "visible";
-  }
-
-  wrapper.addEventListener("scroll", toggleArrows);
-  window.addEventListener("resize", toggleArrows);
-  toggleArrows();
 });
 
 

@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>ABOUT</title>
     <link rel="stylesheet" href="about.css">
 </head>
@@ -147,124 +150,86 @@
 
 
     <!-- section 5 -->
+<section class="facts-section">
+  <div class="facts-container">
+    <h2 class="facts-title">Quick Facts</h2>
 
+    <!-- Tabs for desktop -->
+    <div class="tabs-wrapper">
+      <button class="tab active" data-target="enrollment">Enrollment</button>
+      <button class="tab" data-target="faculty">Faculty</button>
+      <button class="tab" data-target="tests">Test Scores</button>
+      <button class="tab" data-target="budget">Budget</button>
+      <button class="tab" data-target="aid">Financial Aid</button>
+    </div>
 
- <section class="facts-section">
-    <div class="facts-container">
-      <h2 class="facts-title">Quick Facts</h2>
+    <!-- Dropdown for mobile -->
+    <div class="tabs-dropdown">
+      <select id="facts-select">
+        <option value="enrollment">Enrollment</option>
+        <option value="faculty">Faculty</option>
+        <option value="tests">Test Scores</option>
+        <option value="budget">Budget</option>
+        <option value="aid">Financial Aid</option>
+      </select>
+    </div>
 
-      <!-- Tabs Navigation -->
-      <div class="facts-tabs">
-        <button class="arrow left">&#10094;</button>
-        <div class="tabs-wrapper">
-          <button class="tab active" data-target="enrollment">Enrollment</button>
-          <button class="tab" data-target="faculty">Faculty</button>
-          <button class="tab" data-target="tests">Test Scores</button>
-          <button class="tab" data-target="budget">Budget</button>
-          <button class="tab" data-target="aid">Financial Aid</button>
-        </div>
-        <button class="arrow right">&#10095;</button>
+    <!-- Tab Content -->
+    <div class="facts-content">
+      <div class="tab-content active" id="enrollment">
+        <h3 class="facts-subtitle">2025-2026 Enrollment</h3>
+        <table class="facts-table">
+          <thead>
+            <tr>
+              <th>Entry</th>
+              <th>Students</th>
+              <th>Avg. Class Size</th>
+              <th>Students of Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Preschool (Pre-K–K):</td><td>96</td><td>16</td><td>66%</td></tr>
+            <tr><td>Lower School (Primer–4th):</td><td>367</td><td>17</td><td>66%</td></tr>
+            <tr><td>Middle School (5th–8th):</td><td>445</td><td>18</td><td>49%</td></tr>
+            <tr><td>Upper School (9th–12th):</td><td>528</td><td>18</td><td>57%</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <!-- Tab Content -->
-      <div class="facts-content">
-        <!-- Enrollment -->
-        <div class="tab-content active" id="enrollment">
-          <h3 class="facts-subtitle">2025-2026 Enrollment</h3>
-          <table class="facts-table">
-            <thead>
-              <tr>
-                <th>Entry</th>
-                <th>Students</th>
-                <th>Avg. Class Size</th>
-                <th>Students of Color</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Preschool (Pre-K–K):</td>
-                <td>96</td>
-                <td>16</td>
-                <td>66%</td>
-              </tr>
-              <tr>
-                <td>Lower School (Primer–4th):</td>
-                <td>367</td>
-                <td>17</td>
-                <td>66%</td>
-              </tr>
-              <tr>
-                <td>Middle School (5th–8th):</td>
-                <td>445</td>
-                <td>18</td>
-                <td>49%</td>
-              </tr>
-              <tr>
-                <td>Upper School (9th–12th):</td>
-                <td>528</td>
-                <td>18</td>
-                <td>57%</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="tab-content" id="faculty">
+        <h3 class="facts-subtitle">Faculty</h3>
+        <p><strong>Full-Time Faculty:</strong> 163</p>
+        <p><strong>Faculty of Color:</strong> 37%</p>
+        <p><strong>Faculty with Advanced Degrees:</strong> 58%</p>
+      </div>
 
-        <!-- Faculty -->
-        <div class="tab-content" id="faculty">
-          <h3 class="facts-subtitle">Faculty</h3>
-          <p><strong>Full-Time Faculty:</strong> 163</p>
-          <p><strong>Faculty of Color:</strong> 37%</p>
-          <p><strong>Faculty with Advanced Degrees:</strong> 58%</p>
-        </div>
+      <div class="tab-content" id="tests">
+        <h3 class="facts-subtitle">Test Scores</h3>
+        <table class="facts-table">
+          <tbody>
+            <tr><td><strong>Reading:</strong></td><td>32–36</td></tr>
+            <tr><td><strong>Science:</strong></td><td>28–34</td></tr>
+            <tr><td><strong>English:</strong></td><td>30–35</td></tr>
+            <tr><td><strong>Math:</strong></td><td>26–34</td></tr>
+            <tr><td><strong>Composite:</strong></td><td>29–34</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-        <!-- Test Scores -->
-        <div class="tab-content" id="tests">
-          <h3 class="facts-subtitle">Test Scores</h3>
-          <h4>ACT Range of Middle 50%</h4>
-          <table class="facts-table">
-            <tbody>
-              <tr>
-                <td><strong>Reading:</strong></td>
-                <td>32–36</td>
-              </tr>
-              <tr>
-                <td><strong>Science:</strong></td>
-                <td>28–34</td>
-              </tr>
-              <tr>
-                <td><strong>English:</strong></td>
-                <td>30–35</td>
-              </tr>
-              <tr>
-                <td><strong>Math:</strong></td>
-                <td>26–34</td>
-              </tr>
-              <tr>
-                <td><strong>Composite:</strong></td>
-                <td>29–34</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="tab-content" id="budget">
+        <h3 class="facts-subtitle">Budget</h3>
+        <p><strong>Annual Operating Budget:</strong> $45 Million</p>
+        <p><strong>Endowment:</strong> $120 Million</p>
+      </div>
 
-        <!-- Budget -->
-        <div class="tab-content" id="budget">
-          <h3 class="facts-subtitle">Budget</h3>
-          <p><strong>Annual Operating Budget:</strong> $45 Million</p>
-          <p><strong>Endowment:</strong> $120 Million</p>
-        </div>
-
-        <!-- Financial Aid -->
-        <div class="tab-content" id="aid">
-          <h3 class="facts-subtitle">Financial Aid</h3>
-          <p><strong>Students Receiving Aid:</strong> 28%</p>
-          <p><strong>Total Aid Awarded:</strong> $12 Million</p>
-        </div>
+      <div class="tab-content" id="aid">
+        <h3 class="facts-subtitle">Financial Aid</h3>
+        <p><strong>Students Receiving Aid:</strong> 28%</p>
+        <p><strong>Total Aid Awarded:</strong> $12 Million</p>
       </div>
     </div>
-  </section>
-
-
+  </div>
+</section>
 
 <!-- /* section 6 */ -->
 
